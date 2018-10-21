@@ -1,0 +1,957 @@
+﻿<!DOCTYPE html>
+<!--
+* html base file v0.1
+* Project: Dashboard UI
+* Release: 0.1
+* Author: Nasr Aldin M.
+* E-mail: nasr2ldin@gmail.com
+* Author URL: http://nasraldin.com
+* Released under the MIT license
+*
+* Date: 2018-09-25 T04:41
+*-->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard UI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Standard Meta Tags -->
+    <meta name="description" content="admin dashboard html5 bootstrap">
+    <meta name="keywords" content="HTML,CSS,JavaScript,jquery,bootstrap">
+    <meta name="author" content="Nasr Aldin">
+
+    <!-- Site Properties -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/codezero-framework.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <!-- header tag -->
+                <header class="nav-main-container is-loading-nav z-index-1000" role="menu" tabindex="-1">
+                    <div class="nav-main__content h-auto align-items-center">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 hide-on-small-and-down">
+                                <div class="top-bar">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                                <ul class="top-bar-left" role="menu">
+                                                    <li>
+                                                        <i class="fas fa-truck"></i>
+                                                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="All orders of 200.00 SAR or more on eligible items across any product category qualify for FREE Shipping.">
+                                                            <small>Free Shipping</small>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-undo"></i>
+                                                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="Changed your mind, you can return your product and get a full refund.">
+                                                            <small>Free Returns</small>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-dollar-sign"></i>
+                                                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="Pay for your order in cash at the moment the shipment is delivered to your doorstep.">
+                                                            <small>Cash on Delivery</small>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                                <ul class="top-bar-right" role="menu">
+                                                    <li>
+                                                        <a href="">Daily Deals</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Customer Service</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Sell with Us</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Track Orders</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <nav class="navbar-home navbar-toggleable-md navbar-inverse bg-primary">
+                                    <div class="navbar-wrap z-index-20">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                                                    <div class="navbrhm-toggler">
+                                                        <span class="sidebar-toggler">
+                                                            <a href="" id="sidebar-menu-toggle" class="AK" title="Main Menu">
+                                                                <i class="fa fa-bars sidebar-toggler-icon"></i>
+                                                            </a>
+                                                        </span>
+                                                        <a href="" class="global_navigate">CodeZero</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-6 hide-on-small-and-down">
+                                                    <div class="search-frm-wrp">
+                                                        <form>
+                                                            <div class="search-field-wrp">
+                                                                <div class="input-icon">
+                                                                    <label for="search-home" class="lblsearch">
+                                                                        <i class="fa fa-search"></i>
+                                                                    </label>
+                                                                    <input type="text" name="search-home" class="form-control search-el-input"
+                                                                        placeholder="Search...">
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 hide-on-small-and-down">
+                                                    <div class="nav-container d-flex h-100" role="navigation"
+                                                        aria-label="Primary">
+                                                        <ul class="nav-main no-txt-select">
+                                                            <li class="nav-item nav-item--feed h-100">
+                                                                <a href="#" class="nav-item__link w-100 a-decoration-non">
+                                                                    <span class="badge badge-primary nav-item__badge z-index-1000">10</span>
+                                                                    <i class="fa fa-home nav-item__icon"></i>
+                                                                    <span class="nav-item__title">Home</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="nav-item nav-item--feed h-100">
+                                                                <a href="#" class="nav-item__link w-100 a-decoration-non">
+                                                                    <span class="badge badge-primary nav-item__badge z-index-1000">10</span>
+                                                                    <i class="fa fa-users nav-item__icon"></i>
+                                                                    <span class="nav-item__title">My Network</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="nav-item nav-item--feed h-100">
+                                                                <a href="#" class="nav-item__link w-100 a-decoration-non">
+                                                                    <span class="badge badge-primary nav-item__badge z-index-1000">10</span>
+                                                                    <i class="fa fa-briefcase nav-item__icon"></i>
+                                                                    <span class="nav-item__title">Jobs</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="site-navbar-io">
+                                                            <div class="usnvwrap-io-wrp">
+                                                                <div class="snviocnt">
+                                                                    <div class="snviocnt-wrp">
+                                                                        <div class="user-nav-home">
+                                                                            <div class="usnav-item lnht">
+                                                                                <a id="siteNotifications" class="unv-link"
+                                                                                    data-toggle="dropdown"
+                                                                                    aria-haspopup="true" aria-expanded="false">
+                                                                                    <i class="fa fa-bell unv-io"></i>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="usnav-item lnht">
+                                                                                <a id="site-navigation" class="unv-link"
+                                                                                    data-toggle="dropdown"
+                                                                                    aria-haspopup="true" aria-expanded="false"><i
+                                                                                        class="fa fa-th unv-io"></i></a>
+                                                                                <div class="dropdown-menu unsetbootspdrp"
+                                                                                    aria-labelledby="site-navigation">
+                                                                                    <span class="mnav-io-top"></span>
+                                                                                    <div class="site-navigation">
+                                                                                        <ul class="mnav-ul" role="menu">
+                                                                                            <li class="mnav-li">
+                                                                                                <a href="#" class="a-content-link mnva-active">
+                                                                                                    <img src="images/account.svg"
+                                                                                                        class="link-io"
+                                                                                                        alt="">
+                                                                                                    <span class="link-title">Account</span>
+                                                                                                </a>
+                                                                                            </li>
+                                                                                            <li class="mnav-li">
+                                                                                                <a href="#" class="a-content-link">
+                                                                                                    <img src="images/settings.svg"
+                                                                                                        class="link-io"
+                                                                                                        alt="">
+                                                                                                    <span class="link-title">Settings</span>
+                                                                                                </a>
+                                                                                            </li>
+                                                                                            <li class="mnav-li">
+                                                                                                <a href="#" class="a-content-link">
+                                                                                                    <img src="images/google_inbox.png"
+                                                                                                        class="link-io"
+                                                                                                        alt="">
+                                                                                                    <span class="link-title">Inbox</span>
+                                                                                                </a>
+                                                                                            </li>
+                                                                                            <li class="mnav-li">
+                                                                                                <a href="#" class="a-content-link">
+                                                                                                    <img src="images/logo_sites_128px.png"
+                                                                                                        class="link-io"
+                                                                                                        alt="">
+                                                                                                    <span class="link-title">Sites</span>
+                                                                                                </a>
+                                                                                            </li>
+                                                                                            <li class="mnav-li">
+                                                                                                <a href="#" class="a-content-link">
+                                                                                                    <img src="images/folder.svg"
+                                                                                                        class="link-io"
+                                                                                                        alt="">
+                                                                                                    <span class="link-title">File
+                                                                                                        Manager</span>
+                                                                                                </a>
+                                                                                            </li>
+                                                                                            <li class="mnav-li">
+                                                                                                <a href="#" class="a-content-link">
+                                                                                                    <img src="images/photos.svg"
+                                                                                                        class="link-io"
+                                                                                                        alt="">
+                                                                                                    <span class="link-title">Photos</span>
+                                                                                                </a>
+                                                                                            </li>
+                                                                                            <li class="mnav-li">
+                                                                                                <a href="#" class="a-content-link">
+                                                                                                    <img src="images/youtube_play_button.svg"
+                                                                                                        class="link-io"
+                                                                                                        alt="">
+                                                                                                    <span class="link-title">Videos</span>
+                                                                                                </a>
+                                                                                            </li>
+                                                                                            <li class="mnav-li">
+                                                                                                <a href="#" class="a-content-link">
+                                                                                                    <img src="images/cloudsearch.png"
+                                                                                                        class="link-io"
+                                                                                                        alt="">
+                                                                                                    <span class="link-title">Cloud
+                                                                                                        Search</span>
+                                                                                                </a>
+                                                                                            </li>
+                                                                                            <li class="mnav-li">
+                                                                                                <a href="#" class="a-content-link">
+                                                                                                    <i class="fa fa-question fa-4x link-io"></i>
+                                                                                                    <span class="link-title">Help</span>
+                                                                                                </a>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                        <a href="" class="mnav-more">More</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="usnav-item">
+                                                                                <a href="" class="unv-link vlit" id="user-link-prof"
+                                                                                    data-toggle="dropdown"
+                                                                                    aria-haspopup="true" aria-expanded="false">
+                                                                                    <img src="https://media.licdn.com/dms/image/C5603AQGwANmwfIQ2Mw/profile-displayphoto-shrink_100_100/0?e=1543449600&amp;v=beta&amp;t=uKH29NX28xLTFxpVR342gP0gicsiGZiYK20sJtYwdGk"
+                                                                                        class="usr-pro-pic" alt="">
+                                                                                </a>
+                                                                                <div class="dropdown-menu user-profmenu nav-settings__dropdown-options"
+                                                                                    aria-labelledby="user-link-prof">
+                                                                                    <ul class="profile-nav-item">
+                                                                                        <li class="nav-settings__topcard">
+                                                                                            <a href="" class="nav-settings__view-profile-link clearfix">
+                                                                                                <div class="nav-settings__member">
+                                                                                                    <div class="nav-settings__member-photo-container">
+                                                                                                        <img src="https://media.licdn.com/dms/image/C5603AQGwANmwfIQ2Mw/profile-displayphoto-shrink_100_100/0?e=1543449600&amp;v=beta&amp;t=uKH29NX28xLTFxpVR342gP0gicsiGZiYK20sJtYwdGk"
+                                                                                                            class="nav-settings__member-photo EntityPhoto-circle-4"
+                                                                                                            alt="Nasr Eldin Abdelfadeil"
+                                                                                                            height="70"
+                                                                                                            width="70">
+                                                                                                    </div>
+
+                                                                                                    <div class="nav-settings__member-info-container">
+                                                                                                        <h3 class="nav-settings__member-name">
+                                                                                                            Nasr Eldin
+                                                                                                            Abdelfadeil
+                                                                                                        </h3>
+                                                                                                        <h4 class="nav-settings__member-occupation">
+                                                                                                            Senior
+                                                                                                            Software
+                                                                                                            Developer
+                                                                                                            at
+                                                                                                            THIQAH
+                                                                                                            Business
+                                                                                                            Services
+                                                                                                        </h4>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                                <div class="nav-settings__linkcard">
+                                                                                                    <span class="nav-settings__linkcard-link button-tertiary-medium">
+                                                                                                        View profile
+                                                                                                    </span>
+                                                                                                </div>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                        <li class="nav-dropdown__item nav-settings__premium-item">
+                                                                                            <div class="nav-settings__premium-upsell-link">
+                                                                                                <a id="ember6760"
+                                                                                                    data-control-name="premium_nav_me_upsell_click"
+                                                                                                    title="Reactivate Premium"
+                                                                                                    href="/premium/products/?destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Fnotifications%2F%3FshowPremiumWelcomeBanner%3Dtrue&amp;upsellOrderOrigin=premium_nav_me_upsell"
+                                                                                                    class="link-without-visited-state   ember-view">
+                                                                                                    <i class="fas fa-box nav-settings__premium-gold-icon"></i>
+                                                                                                    Reactivate Premium
+
+                                                                                                </a>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                        <li class="nav-settings__dropdown-options-account">
+                                                                                            <h5 class="nav-dropdown__title nav-settings__dropdown-title Sans-14px-black-90%-bold">Account</h5>
+                                                                                            <ul class="nav-settings__dropdown-items">
+                                                                                                <li class="nav-dropdown__item nav-settings__dropdown-item Sans-14px-black-60%">
+                                                                                                    <a id="ember7537"
+                                                                                                        data-control-name="nav.settings_account_manage_account"
+                                                                                                        target="_blank"
+                                                                                                        href="https://www.linkedin.com/psettings/"
+                                                                                                        class="block ember-view">
+                                                                                                        Settings
+                                                                                                        &amp; Privacy
+                                                                                                    </a>
+                                                                                                </li>
+                                                                                                <li class="nav-dropdown__item nav-settings__dropdown-item Sans-14px-black-60%">
+                                                                                                    <a id="ember7538"
+                                                                                                        data-control-name="nav.settings_account_help"
+                                                                                                        target="_blank"
+                                                                                                        href="https://www.linkedin.com/help/linkedin?trk=me_dropdown_d_flagship3_detail_base"
+                                                                                                        class="block ember-view">
+                                                                                                        Help
+                                                                                                        Center
+                                                                                                    </a>
+                                                                                                </li>
+                                                                                                <li class="nav-dropdown__item nav-settings__dropdown-item Sans-14px-black-60%">
+                                                                                                    <a id="ember7539"
+                                                                                                        data-control-name="nav.settings_account_language"
+                                                                                                        target="_blank"
+                                                                                                        href="https://www.linkedin.com/psettings/select-language"
+                                                                                                        class="block ember-view">
+                                                                                                        Language
+                                                                                                    </a>
+                                                                                                </li>
+
+                                                                                                <li class="nav-dropdown__item nav-settings__dropdown-item Sans-14px-black-60%">
+                                                                                                    <a id="ember7539"
+                                                                                                        data-control-name="nav.settings_account_language"
+                                                                                                        target="_blank"
+                                                                                                        href="https://www.linkedin.com/psettings/select-language"
+                                                                                                        class="block ember-view">
+                                                                                                        Edit
+                                                                                                        profile
+                                                                                                    </a>
+                                                                                                </li>
+                                                                                                <li class="nav-dropdown__item nav-settings__dropdown-item Sans-14px-black-60%">
+                                                                                                    <a id="ember7539"
+                                                                                                        data-control-name="nav.settings_account_language"
+                                                                                                        target="_blank"
+                                                                                                        href="https://www.linkedin.com/psettings/select-language"
+                                                                                                        class="block ember-view">
+                                                                                                        Account
+                                                                                                        settings
+                                                                                                    </a>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </li>
+                                                                                        <li class="nav-settings__dropdown-options-account">
+                                                                                            <h5 class="nav-dropdown__title nav-settings__dropdown-title Sans-14px-black-90%-bold">Manage</h5>
+                                                                                            <ul class="nav-settings__dropdown-items">
+                                                                                                <li class="nav-dropdown__item nav-settings__dropdown-item Sans-14px-black-60%">
+                                                                                                    <a id="ember7537"
+                                                                                                        data-control-name="nav.settings_account_manage_account"
+                                                                                                        target="_blank"
+                                                                                                        href="https://www.linkedin.com/psettings/"
+                                                                                                        class="block ember-view">
+                                                                                                        Posts &
+                                                                                                        Activity
+                                                                                                    </a>
+                                                                                                </li>
+                                                                                                <li class="nav-dropdown__item nav-settings__dropdown-item Sans-14px-black-60%">
+                                                                                                    <a id="ember7538"
+                                                                                                        data-control-name="nav.settings_account_help"
+                                                                                                        target="_blank"
+                                                                                                        href="https://www.linkedin.com/help/linkedin?trk=me_dropdown_d_flagship3_detail_base"
+                                                                                                        class="block ember-view">
+                                                                                                        Job
+                                                                                                        postings
+                                                                                                    </a>
+                                                                                                </li>
+                                                                                                <li class="nav-dropdown__item nav-settings__dropdown-item Sans-14px-black-60%">
+                                                                                                    <a id="ember7539"
+                                                                                                        data-control-name="nav.settings_account_language"
+                                                                                                        target="_blank"
+                                                                                                        href="https://www.linkedin.com/psettings/select-language"
+                                                                                                        class="block ember-view">
+                                                                                                        Company:
+                                                                                                        FAL Media
+                                                                                                    </a>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </li>
+                                                                                        <li class="nav-dropdown__item nav-settings__premium-item">
+                                                                                            <div class="nav-settings__premium-upsell-link">
+                                                                                                <a title="Reactivate Premium"
+                                                                                                    href="" class="link-without-visited-state">
+                                                                                                    Sign out
+
+                                                                                                </a>
+                                                                                            </div>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <!-- end header tag -->
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <!-- main tag -->
+                <main id="site-main" class="site-main">
+                    <!-- sidebar home-->
+                    <aside id="sidebarHome" class="aside sidebarHome z-index-100">
+                        <div class="sidebar-home-container" role="menu">
+                            <div class="search-frm-wrp sticky-top mb-2">
+                                <form>
+                                    <div class="search-field-wrp">
+                                        <div class="input-icon">
+                                            <label for="search-home" class="lblsearch pt-0">
+                                                <i class="fa fa-search blue-grey lighten-2"></i>
+                                            </label>
+                                            <input type="text" name="search-home" class="form-control search-el-input blue-grey lighten-2"
+                                                placeholder="Search...">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <ul class="sidebar-nav">
+                                <li class="sidebar-item active">
+                                    <a href="#menu1" class="sdbh-link" data-toggle="collapse" data-parent="#sidebar"
+                                        aria-expanded="false">
+                                        <i class="fas fa-home blue-text io"></i><span class="sppad">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sdbh-link"><i class="fa fa-home io"></i><span class="sppad">Dashboard
+                                            Dashboard Dashboard Dashboard</span></a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sdbh-link"><i class="fa fa-home io"></i><span class="sppad">Dashboard</span></a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sdbh-link"><i class="fa fa-home io"></i><span class="sppad">Dashboard</span></a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sdbh-link"><i class="fa fa-home io"></i><span class="sppad">Dashboard</span></a>
+                                </li>
+                            </ul>
+                            <ul class="sidebar-nav">
+                                <li class="sidebar-title">Bundled in the</li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sdbh-link"><i class="fa fa-home io"></i><span class="sppad">Dashboard</span></a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sdbh-link"><i class="fa fa-home io"></i><span class="sppad">Dashboard</span></a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sdbh-link"><i class="fa fa-home io"></i><span class="sppad">Dashboard</span></a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sdbh-link"><i class="fa fa-home io"></i><span class="sppad">Dashboard</span></a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sdbh-link"><i class="fa fa-home io"></i><span class="sppad">Dashboard</span></a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sdbh-link"><i class="fa fa-home io"></i><span class="sppad">Dashboard</span></a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sdbh-link"><i class="fa fa-home io"></i><span class="sppad">Dashboard</span></a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sdbh-link"><i class="fa fa-home io"></i><span class="sppad">Dashboard</span></a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sdbh-link"><i class="fa fa-home io"></i><span class="sppad">Dashboard</span></a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sdbh-link"><i class="fa fa-home io"></i><span class="sppad">Dashboard</span></a>
+                                </li>
+
+                            </ul>
+                            <ul class="sidebar-nav border-bottom-0">
+                                <li class="sidebar-item">
+                                    <button type="button" class="sdbh-link" data-toggle="modal" data-target="#settingsModal">
+                                        <i class="fa fa-sliders-h io"></i><span class="sppad">Settings</span>
+                                    </button>
+                                </li>
+                                <li class="sidebar-item">
+                                    <button type="button" id="showHelpWizard" class="sdbh-link" data-toggle="modal"
+                                        data-target="#help-wizard-dialog">
+                                        <i class="fa fa-question-circle io"></i>
+                                        <span class="sppad">Help & Feedback</span>
+                                    </button>
+                                    <!-- <a href="#" class="sdbh-link"><i class="fa fa-question-circle io"></i><span class="sppad">Help
+                                            & Feedback</span></a> -->
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <!-- sidebar home wrapper -->
+                    <!-- site content-->
+                    <div class="site-content">
+                        <div class="page-wrapper">
+                            <section class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                        <nav aria-label="breadcrumb">
+                                            <ol class="breadcrumb">
+                                                <li class="breadcrumb-item active"><a href="">Home</a></li>
+                                            </ol>
+                                        </nav>
+                                    </div>
+                                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                        <div class="no-data-wrp">
+                                            <div class="no-data">
+                                                <i class="fas fa-file fa-10x white-text"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- page content wrapper-->
+                    <!-- site sidebar universal notifications-->
+                    <!--<aside class="aside right0 site-aside" aria-labelledby="site-aside">
+                <div class="site-aside-wrapper">
+                    <div class="notifications-section">
+                        <header class="notf-hdr">
+                            <span class="notf-title">Notifications</span>
+                        </header>
+                        <div>
+                            <span aria-label="Nothing new right now" tabindex="0">Nothing new right now</span>
+                        </div>
+                        <div class="notificationsContent">
+    
+                        </div>
+                    </div>
+                </div>
+            </aside>-->
+                    <!-- sidebar universal notifications-->
+                </main>
+                <!-- end main tag -->
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed-action-btn white-text">
+        <a class="btn-floating btn-large red">
+            <i class="fas fa-plus"></i>
+        </a>
+        <ul>
+            <li>
+                <a class="btn-floating red">
+                    <i class="fas fa-plus"></i>
+                </a>
+            </li>
+            <li>
+                <a class="btn-floating yellow darken-1">
+                    <i class="fas fa-plus"></i>
+                </a>
+            </li>
+            <li>
+                <a class="btn-floating green">
+                    <i class="fas fa-plus"></i>
+                </a>
+            </li>
+            <li>
+                <a class="btn-floating blue">
+                    <i class="fas fa-plus"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- <iframe id="google-feedback-wizard" style="border: 0px; background: none; display: block; width: 1519px; height: 754px; z-index: 10000000; top: 0px; left: 0px; visibility: visible; opacity: 1; position: fixed;"
+        frameborder="0" allowtransparency="true" src="HelpPanel.html"></iframe> -->
+
+    <div class="modal fade" id="settingsModal" tabindex="-1" role="dialog" aria-labelledby="settingsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header pl-4">
+                    <h5 class="modal-title" id="settingsModalLabel">Settings</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="qI">
+                        <div class="row">
+                            <div class="col-3 br-1 pl-15">
+                                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+                                        role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+                                        role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+                                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
+                                        role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+                                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings"
+                                        role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane tab-cnt12 fade show active" id="v-pills-home" role="tabpanel"
+                                        aria-labelledby="v-pills-home-tab">
+
+                                        <div class="usetting-wrp">
+                                            <h4 class="pg-tit">UI Settings</h4>
+
+                                            <div class="settings-content">
+                                                <div class="listitem-mdal">
+                                                    <div class="list-title">
+                                                        <i class="fas fa-address-book blue-grey-text"></i>
+                                                        <span class="lstit">
+                                                            Sync Issues/Server
+                                                            Failures
+                                                        </span>
+                                                        <span class="lsstng">
+                                                            <a href="">
+                                                                <i class="fas fa-cog"></i>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="list-switch">
+                                                        <span class="switch switch-sm">
+                                                            <input type="checkbox" class="switch" id="switch-sm">
+                                                            <label for="switch-sm"></label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="listitem-mdal">
+                                                    <div class="list-title">
+                                                        <i class="fas fa-address-book blue-grey-text"></i>
+                                                        <span class="lstit">
+                                                            Sync Issues/Server
+                                                            Failures
+                                                        </span>
+                                                        <span class="lsstng">
+                                                            <a href="">
+                                                                <i class="fas fa-cog"></i>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="list-switch">
+                                                        <span class="switch switch-sm">
+                                                            <input type="checkbox" class="switch" id="switch-sm">
+                                                            <label for="switch-sm"></label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="listitem-mdal">
+                                                    <div class="list-title">
+                                                        <i class="fas fa-address-book blue-grey-text"></i>
+                                                        <span class="lstit">
+                                                            Sync Issues/Server
+                                                            Failures
+                                                        </span>
+                                                        <span class="lsstng">
+                                                            <a href="">
+                                                                <i class="fas fa-cog"></i>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="list-switch">
+                                                        <span class="switch switch-sm">
+                                                            <input type="checkbox" class="switch" id="switch-sm">
+                                                            <label for="switch-sm"></label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="listitem-mdal">
+                                                    <div class="list-title">
+                                                        <i class="fas fa-address-book blue-grey-text"></i>
+                                                        <span class="lstit">
+                                                            Sync Issues/Server
+                                                            Failures
+                                                        </span>
+                                                        <span class="lsstng">
+                                                            <a href="">
+                                                                <i class="fas fa-cog"></i>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="list-switch">
+                                                        <span class="switch switch-sm">
+                                                            <input type="checkbox" class="switch" id="switch-sm">
+                                                            <label for="switch-sm"></label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="listitem-mdal">
+                                                    <div class="list-title">
+                                                        <i class="fas fa-address-book blue-grey-text"></i>
+                                                        <span class="lstit">
+                                                            Sync Issues/Server
+                                                            Failures
+                                                        </span>
+                                                        <span class="lsstng">
+                                                            <a href="">
+                                                                <i class="fas fa-cog"></i>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="list-switch">
+                                                        <span class="switch switch-sm">
+                                                            <input type="checkbox" class="switch" id="switch-sm">
+                                                            <label for="switch-sm"></label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="listitem-mdal">
+                                                    <div class="list-title">
+                                                        <i class="fas fa-address-book blue-grey-text"></i>
+                                                        <span class="lstit">
+                                                            Sync Issues/Server
+                                                            Failures
+                                                        </span>
+                                                        <span class="lsstng">
+                                                            <a href="">
+                                                                <i class="fas fa-cog"></i>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="list-switch">
+                                                        <span class="switch switch-sm">
+                                                            <input type="checkbox" class="switch" id="switch-sm">
+                                                            <label for="switch-sm"></label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+                                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+                                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="button_n-style" data-dismiss="modal">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="help-wizard-dialog" class="help-dialog z-index-9999" tabindex="-1" role="dialog" data-backdrop="false">
+        <div class="help-dialog_wrp" role="document">
+            <div class="help-dialog_header blue-grey darken-3">
+                <div class="help-dialog_row">
+                    <button type="button" class="help-dialog_btn-previous btn-unset btn-icon_align left"><i class="fas fa-arrow-left"></i></button>
+                    <h1 class="help-dialog_title">Help</h1>
+                    <button type="button" class="close btn-unset btn-icon_align right" data-dismiss="modal" aria-label="Close"><i
+                            class="fas fa-times"></i></button>
+                </div>
+                <div class="help-dialog_searchRow">
+                    <div class="help-dialog_searchFormContainer">
+                        <form class="help-dialog_searchForm">
+                            <input id="search-box" class="help-dialog_searchBox" type="text" placeholder="Search Help">
+                            <button class="help-dialog_searchBtn btn-unset btn-icon_align" aria-label="Search">
+                                <i class="fas fa-search"></i>
+                            </button>
+                            <div class="help-dialog_spinnerContainer">
+                                <div class="ghp-spinner"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="help-dialog_content">
+                <div class="help-dialog_card">
+                    <h4 class="help-dialog-card_title">Popular</h4>
+                    <ol class="help-dialog-card_list">
+                        <li class="help-dialog-card_listItem">
+                            <a class="help-dialog-card_result help-btn_hover help-card_label-br" target="_blank" href="https://support.google.com/inbox/bin/answer.py?hl=en&amp;answer=9117840">
+                                <span class="help-dialog-card_icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </span>
+                                <span class="help-dialog-card_label">
+                                    Move from lnbox to Gmail
+                                </span>
+                            </a>
+                        </li>
+                        <li class="help-dialog-card_listItem">
+                            <a class="help-dialog-card_result help-btn_hover help-card_label-br" target="_blank" href="https://support.google.com/inbox/bin/answer.py?hl=en&amp;answer=9117840">
+                                <span class="help-dialog-card_icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </span>
+                                <span class="help-dialog-card_label">
+                                    Move from lnbox to Gmail
+                                </span>
+                            </a>
+                        </li>
+                        <li class="help-dialog-card_listItem">
+                            <a class="help-dialog-card_result help-btn_hover help-card_label-br" target="_blank" href="https://support.google.com/inbox/bin/answer.py?hl=en&amp;answer=9117840">
+                                <span class="help-dialog-card_icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </span>
+                                <span class="help-dialog-card_label">
+                                    Move from lnbox to Gmail
+                                </span>
+                            </a>
+                        </li>
+                        <li class="help-dialog-card_listItem">
+                            <a class="help-dialog-card_result help-btn_hover help-card_label-br" target="_blank" href="https://support.google.com/inbox/bin/answer.py?hl=en&amp;answer=9117840">
+                                <span class="help-dialog-card_icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </span>
+                                <span class="help-dialog-card_label">
+                                    Move from lnbox to Gmail
+                                </span>
+                            </a>
+                        </li>
+                        <li class="help-dialog-card_listItem">
+                            <a class="help-dialog-card_result help-btn_hover help-card_label-br" target="_blank" href="https://support.google.com/inbox/bin/answer.py?hl=en&amp;answer=9117840">
+                                <span class="help-dialog-card_icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </span>
+                                <span class="help-dialog-card_label">
+                                    Move from lnbox to Gmail
+                                </span>
+                            </a>
+                        </li>
+                        <li class="help-dialog-card_listItem">
+                            <a class="help-dialog-card_result help-btn_hover help-card_label-br" target="_blank" href="https://support.google.com/inbox/bin/answer.py?hl=en&amp;answer=9117840">
+                                <span class="help-dialog-card_icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </span>
+                                <span class="help-dialog-card_label">
+                                    Move from lnbox to Gmail
+                                </span>
+                            </a>
+                        </li>
+                        <li class="help-dialog-card_listItem">
+                            <a class="help-dialog-card_result help-btn_hover help-card_label-br" target="_blank" href="https://support.google.com/inbox/bin/answer.py?hl=en&amp;answer=9117840">
+                                <span class="help-dialog-card_icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </span>
+                                <span class="help-dialog-card_label">
+                                    Move from lnbox to Gmail
+                                </span>
+                            </a>
+                        </li>
+                        <li class="help-dialog-card_listItem">
+                            <a class="help-dialog-card_result help-btn_hover help-card_label-br" target="_blank" href="https://support.google.com/inbox/bin/answer.py?hl=en&amp;answer=9117840">
+                                <span class="help-dialog-card_icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </span>
+                                <span class="help-dialog-card_label">
+                                    Move from lnbox to Gmail
+                                </span>
+                            </a>
+                        </li>
+                    </ol>
+                    <ol class="ghp-searchPanel-list">
+                        <li class="ghp-searchPanel-listItem ghp-separator">
+                            <a class="ghp-button ghpv-block help-btn_hover" target="_blank" href="https://support.google.com/inbox?hl=en-US&amp;authuser=0">
+                                <span class="ghp-button-label">
+                                    Browse All Articles
+                                </span>
+                                <span class="ghp-externalLink">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="ghp-searchPanel-listItem ghp-separator">
+                            <a class="ghp-button ghpv-block help-btn_hover" href="https://productforums.google.com/forum/?authuser=0#!forum/inbox">
+                                <span class="ghp-button-label">
+                                    Visit Help Forum
+                                </span>
+                                <span class="ghp-externalLink">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+                <div class="help-dialog_footer">
+                    <section class="help-dialog_card">
+                        <button class="help-dialog_btn-feedback help-btn_hover">
+                            <span class="help-dialog_feedbackIcon red-text darken-3">
+                                <i class="fas fa-comment-alt"></i>
+                            </span>
+                            <span class="help-dialog_label">
+                                Send feedback
+                            </span>
+                        </button>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui-1.12.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fontawesome.all.min.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript">
+        $("#help-wizard-dialog").draggable();
+
+        $(document).ready(function () {
+            $('#sidebar-menu-toggle').on('click', function (e) {
+                e.preventDefault();
+                $('#sidebarHome').toggleClass('active');
+                $('.site-content').toggleClass('active');
+            });
+
+            $(".sidebar-nav li").each(function () {
+                if ($(this).find(".sppad").text().length > 63) {
+                    // $(this).find("a").prop('title', $(this).find(".sppad").text().trim());
+                    $(this).find(".sppad").text($(this).find(".sppad").text().substring(0, 64).split(
+                        " ").slice(0, -1).join(" ") + "...");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

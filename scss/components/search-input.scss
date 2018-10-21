@@ -1,0 +1,67 @@
+.search-frm-wrp {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto 0;
+
+    form {
+        width: 100%;
+    }
+
+    .search-field-wrp {
+        position: relative;
+        height: auto;
+        width: auto;
+        z-index: 1;
+
+        .input-icon {
+            padding: 0;
+            margin: 0;
+            width: auto;
+
+            &:hover {
+                background: rgba(255, 255, 255, .15);
+
+                label.lblsearch i,
+                label.lblsearch svg,
+                .search-el-input::placeholder {
+                    opacity: 1;
+                }
+            }
+
+            label.lblsearch {
+                position: absolute;
+                height: 100%; //rem(36)
+                width: rem(54.4);
+                padding: rem(8) rem(24);
+                margin: 0;
+
+                i,
+                svg {
+                    position: unset !important;
+                    color: #fff;
+                    opacity: .7;
+                }
+            }
+
+            .search-el-input {
+                background: rgba(255, 255, 255, .15);
+                border: none;
+                box-sizing: border-box;
+                color: #fff;
+                font-size: em(17.6);
+                padding-left: rem(55);
+                margin: rem(9) 0;
+
+                &::placeholder {
+                    color: #fff;
+                    opacity: .7;
+                }
+            }
+        }
+    }
+}

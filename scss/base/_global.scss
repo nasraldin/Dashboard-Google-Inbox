@@ -1,0 +1,251 @@
+$browser-context: 16;
+
+// Function for converting a px based font-size to rem.
+@function rem($pixels, $context: $browser-context) {
+
+    //Default font size on html element is 100%, equivalent to 16px;
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
+    }
+
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+
+    @return $pixels / $context * 1rem;
+}
+
+// Function for converting a px based font-size to em.
+@function em($pixels, $context: $browser-context) {
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
+    }
+
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+
+    @return $pixels / $context * 1em;
+}
+
+@mixin navbarHeight($size:72px) {
+    height: $size;
+    height: rem($size);
+}
+
+//Default styles
+
+body {
+    position: relative;
+    background: #f2f2f2;
+    overflow-x: hidden;
+    backface-visibility: hidden;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none; // Gets rid of tap active state
+    -webkit-tap-highlight-color: transparent;
+}
+
+header,
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    height: auto;
+}
+
+main {
+    margin-top: rem(85);
+}
+
+.AK {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    box-sizing: content-box;
+    position: relative;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+    outline: none;
+
+    &:before {
+        border-radius: 50%;
+        top: rem(-4);
+        left: rem(-4);
+        bottom: rem(-4);
+        right: rem(-4);
+        margin: auto;
+        padding: rem(4);
+        position: absolute;
+        content: ' ';
+    }
+}
+
+.AK:focus::before {
+    background-color: rgba(0, 0, 0, .12);
+}
+
+.ew {
+    background-size: rem(24) rem(24);
+    height: rem(24);
+    width: rem(24);
+
+    &:before {
+        background-size: rem(24) rem(24);
+        height: rem(24);
+        width: rem(24);
+    }
+}
+
+// Icon Styles
+i,
+svg {
+    line-height: inherit;
+
+    &.left {
+        float: left;
+        margin-right: rem(15);
+    }
+
+    &.right {
+        float: right;
+        margin-left: rem(15);
+    }
+
+    &.tiny {
+        font-size: 1rem;
+    }
+
+    &.small {
+        font-size: 2rem;
+    }
+
+    &.medium {
+        font-size: 4rem;
+    }
+
+    &.large {
+        font-size: 6rem;
+    }
+}
+
+// Utility Classes
+
+.hide {
+    display: none !important;
+}
+
+.no-txt-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.a-decoration-non {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:focus {
+        text-decoration: none;
+    }
+
+    &:active {
+        text-decoration: none;
+    }
+
+    &:visited {
+        text-decoration: none;
+    }
+}
+
+.hoverable {
+    transition: box-shadow .25s;
+    box-shadow: 0;
+
+    &:hover {
+        transition: box-shadow .25s;
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+// Z-index levels
+
+// @for $i from 1 through 9999 {
+//     .z-index-#{$i} {
+//         z-index: $i;
+//     }
+// }
+
+.z-index-0 {
+    z-index: 0;
+}
+
+.z-index-5 {
+    z-index: 5;
+}
+
+.z-index-10 {
+    z-index: 10;
+}
+
+.z-index-15 {
+    z-index: 15;
+}
+
+.z-index-20 {
+    z-index: 20;
+}
+
+.z-index-30 {
+    z-index: 30;
+}
+
+.z-index-40 {
+    z-index: 40;
+}
+
+.z-index-50 {
+    z-index: 50;
+}
+
+.z-index-60 {
+    z-index: 60;
+}
+
+.z-index-100 {
+    z-index: 100;
+}
+
+.z-index-200 {
+    z-index: 200;
+}
+
+.z-index-500 {
+    z-index: 500;
+}
+
+.z-index-1000 {
+    z-index: 1000;
+}
+
+.z-index-9999 {
+    z-index: 9999;
+}

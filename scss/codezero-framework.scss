@@ -1,0 +1,54 @@
+﻿/*
+ * core styles v0.1
+ * Project: CodeZero Dashboard
+ * Release: 0.1
+ * Author:  Nasr Aldin M.
+ * E-mail:  nasr2ldin@gmail.com
+ * Author URL:   https://nasraldin.com
+ * Released under the MIT license
+ *
+ * Date: 2018-09-24 T04:41
+ */
+
+@charset "UTF-8";
+
+// colors
+@import "base/color-variables";
+@import "base/color-classes";
+@import "base/color";
+
+// variables
+@import "base/md-variables";
+@import "base/variables";
+
+
+// mixins
+@import "base/mixins";
+
+// global
+@import "base/md-global";
+@import "base/global";
+
+// media query
+@import "base/mediaquery";
+
+// font face
+@import "base/font-face";
+
+// transitions
+@import "base/transitions";
+
+// components
+@import "components/header";
+@import "components/aside";
+@import "components/search-input";
+@import "components/buttons";
+@import "components/switches";
+@import "components/o-switches";
+@import "components/help-panel";
+
+@import "components/site-content";
+@import "components/parallax";
+
+/*@import "modules/responsive";
+@import "modules/theme-color";*/
